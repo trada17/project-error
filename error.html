@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript error displaying</h2>
+    <p>This demostrates how to display error</p>
+    <p id="result"></p>
+    <script>
+        product = (a,b) => a*b;
+        try{
+            document.getElementById("result").innerHTML = a;
+            // if the function is invoked here the result will be displayed
+            // if any variable is given the error message get displayed
+        }
+        catch(err){
+            document.getElementById("result").innerText = err.message;
+        }
+    </script>
+</body>
+</html>
